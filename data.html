@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      .border {
+        border-width: 0.5px !important;
+      }
+
+      .dropdown {
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        transform: translate(0px, 42px) !important;
+        width: 100% !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Modals -->
+
+    <!-- Helper -->
+
+    <!-- Main modal -->
+    <div
+      id="defaultModal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 p-4 w-full md:inset-0 h-modal md:h-full"
+    >
+      <div class="relative w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Yardım Merkezi
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-toggle="defaultModal"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-2">
+            <h5 class="text-md font-semibold text-gray-900 dark:text-white">
+              Faydalı videolar
+            </h5>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Uygulama Nasıl Düzenlenir</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Arayüz Tasarlamak</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>İş Akışı Sekmesi</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Özellik Düzenleyici</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Kullanıcı Kaydı / Giriş Oluşturma</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Uygulamayı Nasıl Yayınlayabilirim</p>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600"
+          >
+            <button
+              data-modal-toggle="defaultModal"
+              type="button"
+              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
+            >
+              Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END Modals -->
+
+    <div class="flex border-b border-gray-300 h-10">
+      <!-- Logo -->
+      <div
+        class="cursor-pointer border-r border-r-3 border-gray-500 flex content-center"
+        style="display: flex; align-items: center"
+      >
+        <span class="font-bold text-gray-500 p-1 border-gray-300">NC</span>
+      </div>
+
+      <!-- search -->
+      <div
+        class="relative 2xl:w-2/12 border-r border-r-3 border-gray-500 flex content-center"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Sayfa: Anasayfa"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Sayfalar -->
+      <div
+        class="relative 2xl:w-2/12 border-r border-r-3 border-gray-500 flex content-center"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Anasayfa"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Düzenle -->
+      <div
+        class="w-1/12 border-r border-r-1 cursor-pointer flex justify-items-between content-center h-10 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <span class="text-xs font-semibold pl-2 p-1 w-full text-gray-500"
+          >Düzenle</span
+        >
+        <i
+          class="fa-solid fa-arrow-up-long -rotate-45 pt-1 pr-1 text-gray-500"
+        ></i>
+      </div>
+
+      <!-- Grid & Bordes -->
+      <div
+        class="relative 2xl:w-1/12 border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Izgara & Kenarlar"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Hazırlıklar -->
+      <div
+        class="relative w-1/12 border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Hazırlıklar"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Bileşenler -->
+      <div
+        class="relative w-1/12 cursor-pointer border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <span class="text-xs font-semibold pl-8 p-1 w-full text-gray-500"
+          >Bileşenler</span
+        >
+        <i
+          class="fa-solid fa-cube absolute left-1 text-gray-500 text-md font-semibold"
+        ></i>
+      </div>
+
+      <!-- Rotate Left -->
+      <div
+        class="relative cursor-pointer border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <i
+          class="fa-solid fa-rotate-left text-gray-500 text-md font-semibold p-1 px-2"
+        ></i>
+        <i
+          class="fa-solid fa-rotate-right text-gray-300 text-md font-semibold p-1 px-2"
+        ></i>
+      </div>
+
+      <!-- Search  -->
+      <div
+        class="relative cursor-pointer border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <i
+          class="fa-solid fa-magnifying-glass text-gray-500 text-md font-semibold p-1 px-2"
+        ></i>
+      </div>
+
+      <!-- Bitir ve  yayınla -->
+      <div
+        class="relative cursor-pointer w-1/12 text-center bg-[#0205D3] m-0 p-0"
+        style="display: flex; align-items: center"
+      >
+        <span
+          class="text-sm 2xl:text-medium px-2 w-full text-gray-500 text-white bg-[#0205D3]"
+          >Bitir ve Yayınla
+        </span>
+      </div>
+
+      <!-- Bitir ve  yayınla -->
+      <div
+        class="relative cursor-pointer w-1/12 text-center m-0 p-0 group hover:bg-[#0205d3] ml-0.5"
+        style="display: flex; align-items: center"
+      >
+        <span
+          class="2xl:text-medium px-2 w-full text-blue-500 group-hover:text-white"
+          >Önizleme
+        </span>
+      </div>
+
+      <!-- Sorular, Hesap -->
+      <div
+        class="w-1/12 cursor-pointer border-gray-500 flex justify-items-end"
+        style="display: flex; justify-content: end; align-items: center"
+      >
+        <div>
+          <i
+            data-modal-toggle="defaultModal"
+            class="fa-regular fa-circle-question text-gray-500 font-semibold p-1 px-2 text-xl"
+          ></i>
+          <i
+            class="fa-solid fa-circle-user text-gray-500 text-md font-semibold p-1 px-2 text-xl"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <!-- Main Menu-->
+      <div class="w-20 h-screen border border-gray-300">
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 text-gray-500 hover:border-blue-500 hover:text-blue-500"
+            onclick="window.open('index.html', '_self')"
+          >
+            <i class="fa-solid fa-pen-ruler text-lg mt-2"></i>
+            <span class="text-md font-semibold">Tasarım</span>
+          </div>
+        </div>
+
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+            onclick="window.open('workflow.html', '_self')"
+          >
+            <i class="fa-solid fa-network-wired text-lg mt-2"></i>
+            <span class="text-md font-semibold">İş Akışı</span>
+          </div>
+        </div>
+
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            onclick="window.open('data.html', '_self')"
+            class="flex flex-col items-center gap-y-2 border-l-4 border-l-4 border-blue-500 text-blue-500"
+          >
+            <i class="fa-solid fa-database text-lg mt-2"></i>
+            <span class="text-md font-semibold">Veriler</span>
+          </div>
+        </div>
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-paintbrush text-lg mt-2"></i>
+            <span class="text-md font-semibold">Stiller</span>
+          </div>
+        </div>
+
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-plug-circle-bolt text-lg mt-2"></i>
+            <span class="text-md font-semibold">Eklentiler</span>
+          </div>
+        </div>
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-gear text-lg mt-2"></i>
+            <span class="text-md font-semibold">Ayarlar</span>
+          </div>
+        </div>
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-regular fa-note-sticky text-lg mt-2"></i>
+            <span class="text-md font-semibold">Loglar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-9-12 p-3 w-full">
+        <div class="border border-1 border-gray-300 p-5">
+          <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+            <ul
+              class="flex flex-wrap -mb-px text-sm font-medium text-center"
+              id="myTab"
+              data-tabs-toggle="#myTabContent"
+              role="tablist"
+            >
+              <li class="mr-2" role="presentation">
+                <button
+                  class="inline-block p-4 rounded-t-lg border-b-2"
+                  id="profile-tab"
+                  data-tabs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Tablolar
+                </button>
+              </li>
+              <li class="mr-2" role="presentation">
+                <button
+                  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                  id="dashboard-tab"
+                  data-tabs-target="#dashboard"
+                  type="button"
+                  role="tab"
+                  aria-controls="dashboard"
+                  aria-selected="false"
+                >
+                  Güvenlik
+                </button>
+              </li>
+              <li class="mr-2" role="presentation">
+                <button
+                  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                  id="settings-tab"
+                  data-tabs-target="#settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="settings"
+                  aria-selected="false"
+                >
+                  Verileri Yönet
+                </button>
+              </li>
+              <li role="presentation">
+                <button
+                  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                  id="contacts-tab"
+                  data-tabs-target="#contacts"
+                  type="button"
+                  role="tab"
+                  aria-controls="contacts"
+                  aria-selected="false"
+                >
+                  Dosya Yöneticisi
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div id="myTabContent">
+            <!-- Tablolar -->
+            <div
+              class="hidden p-4 rounded-lg dark:bg-gray-800"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="md:flex md:space-x-20 sm:mt-5">
+                <div class="w-full md:w-1/2">
+                  <p class="border-b border-gray-300 mb-3">
+                    Oluşturulan Tablolar
+                  </p>
+
+                  <div class="flex justify-between bg-gray-200 py-2">
+                    <span>Kullanıcı</span>
+                    <div class="flex space-x-3 items-center pr-2">
+                      <span class="text-gray-500 text-sm"
+                        >Herkes tarafından görülebilir</span
+                      >
+                      <i
+                        class="text-gray-500 fa-solid fa-trash-can hover:text-gray-400 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between hover:bg-gray-200 py-2 mt-1">
+                    <span>Makaleler</span>
+                    <div class="flex space-x-3 items-center pr-2">
+                      <span class="text-gray-500 text-sm"
+                        >Herkes tarafından görülebilir</span
+                      >
+                      <i
+                        class="text-gray-500 fa-solid fa-trash-can hover:text-gray-400 cursor-pointer"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <div class="border border-gray-300 p-4 bg-gray-50 mt-10">
+                    <div class="flex justify-between items-center">
+                      <span
+                        class="text-sm md:text-md w-32 text-gray-600 font-bold"
+                        >Yeni Tablo</span
+                      >
+
+                      <div class="relative z-0 mb-6 w-full group">
+                        <input
+                          type="text"
+                          name="floating_email"
+                          id="floating_email"
+                          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                          placeholder=" "
+                          required
+                        />
+                        <label
+                          for="floating_email"
+                          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-gray-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 text-sm clear-both"
+                          >Yeni Tablo Adı</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                      <button
+                        type="button"
+                        class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                      >
+                        Oluştur
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                  <p class="border-b border-gray-300 mb-3">Sütün Adları</p>
+
+                  <div class="flex justify-between items-center md:mb-10 mb-5">
+                    <span
+                      class="text-sm md:text-md w-32 text-gray-600 font-bold"
+                      >Sütün Adı</span
+                    >
+
+                    <input
+                      type="text"
+                      value="Metin"
+                      name="floating_email"
+                      id="floating_email"
+                      class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-2 pl-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+                      placeholder=" "
+                      required
+                    />
+                  </div>
+
+                  <div class="flex justify-between w-2/2 2xl:w-1/2 mb-5">
+                    <div class="w-32">
+                      <span class="text-gray-500 font-bold">İsim</span>
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-bold">Metin</span>
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-thin">Yerleşik Alan</span>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between w-2/2 2xl:w-1/2 mb-5">
+                    <div class="w-32">
+                      <span class="text-gray-500 font-bold"
+                        >Olusturulma Tarihi</span
+                      >
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-bold">Zaman</span>
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-thin">Yerleşik Alan</span>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between w-2/2 2xl:w-1/2 mb-5">
+                    <div class="w-32">
+                      <span class="text-gray-500 font-bold"
+                        >Güncellenme Tarihi</span
+                      >
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-bold">Zaman</span>
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-thin">Yerleşik Alan</span>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between w-2/2 2xl:w-1/2 mb-5">
+                    <div class="w-32">
+                      <span class="text-gray-500 font-bold">Slug</span>
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-bold">Metin</span>
+                    </div>
+
+                    <div>
+                      <span class="text-gray-500 font-thin">Yerleşik Alan</span>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-blue-500 font-bold focus:outline-none bg-white rounded border border-blue-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Yeni bir alan oluştur
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Güvenlik -->
+            <div
+              class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800"
+              id="dashboard"
+              role="tabpanel"
+              aria-labelledby="dashboard-tab"
+            >
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                This is some placeholder content the
+                <strong class="font-medium text-gray-800 dark:text-white"
+                  >Dashboard tab's associated content</strong
+                >. Clicking another tab will toggle the visibility of this one
+                for the next. The tab JavaScript swaps classes to control the
+                content visibility and styling.
+              </p>
+            </div>
+
+            <!--  Verileri Yönet-->
+            <div
+              class="hidden p-4 bg-white rounded-lg dark:bg-gray-800"
+              id="settings"
+              role="tabpanel"
+              aria-labelledby="settings-tab"
+            >
+              <div class="flex p-4 space-x-10">
+                <div class="w-1/4">
+                  <p class="border-b mb-3 text-md text-gray-600">
+                    Veritabanı Görüntüleyici
+                  </p>
+
+                  <div class="flex items-center mt-3">
+                    <button
+                      type="button"
+                      class="w-1/2 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                    >
+                      Yeni Görüntüleme
+                    </button>
+
+                    <button
+                      type="button"
+                      class="w-1/2 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                    >
+                      Özel Alanlar
+                    </button>
+                  </div>
+
+                  <div class="mt-4">
+                    <input
+                      type="text"
+                      id="text"
+                      class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      required
+                      placeholder="İsme veya tipe göre ara"
+                    />
+                  </div>
+
+                  <div>
+                    <div
+                      class="flex items-center justify-between mt-4 mb-2 px-2 py-3 bg-[#FAFAFA]"
+                    >
+                      <div>
+                        <span class="text-blue-500 font-bold cursor-pointer"
+                          >Kullanıcı</span
+                        >
+                      </div>
+
+                      <div class="flex space-x-3">
+                        <i
+                          class="fa-regular fa-copy hover:text-gray-500 cursor-pointer"
+                        ></i>
+                        <i
+                          class="fa-solid fa-pencil hover:text-gray-500 cursor-pointer"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center justify-between mt-2 mb-4 px-2 py-3 bg-[#FAFAFA]"
+                    >
+                      <div>
+                        <span class="text-blue-500 font-bold cursor-pointer"
+                          >Makaleler</span
+                        >
+                      </div>
+
+                      <div class="flex space-x-3">
+                        <i
+                          class="fa-regular fa-copy hover:text-gray-500 cursor-pointer"
+                        ></i>
+                        <i
+                          class="fa-solid fa-pencil hover:text-gray-500 cursor-pointer"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-2/3">
+                  <p class="border-b mb-3 text-md text-gray-600">
+                    Uygulama Verileri
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <input
+                      type="text"
+                      id="text"
+                      class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-52"
+                      required
+                      placeholder="İsme veya tipe göre ara"
+                    />
+
+                    <div class="flex">
+                      <button
+                        type="button"
+                        class="py-2 px-7 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                      >
+                        Yeni veri
+                      </button>
+                      <button
+                        type="button"
+                        class="py-2 px-7 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                      >
+                        Sil
+                      </button>
+                      <button
+                        type="button"
+                        class="py-2 px-7 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                      >
+                        Yükle
+                      </button>
+                      <button
+                        type="button"
+                        class="py-2 px-7 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                      >
+                        Düzenle
+                      </button>
+                      <button
+                        type="button"
+                        class="py-2 px-7 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                      >
+                        Dışa Aktar
+                      </button>
+                    </div>
+
+                    <div></div>
+                  </div>
+
+                  <div
+                    class="overflow-x-auto relative shadow-md sm:rounded-lg mt-5"
+                  >
+                    <table
+                      class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                    >
+                      <thead
+                        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+                      >
+                        <tr>
+                          <th scope="col" class="p-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-all-search"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label for="checkbox-all-search" class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </th>
+                          <th scope="col" class="py-3 px-6">ID</th>
+                          <th scope="col" class="py-3 px-6">Email</th>
+                          <th scope="col" class="py-3 px-6">
+                            Oluşturulma Tarihi
+                          </th>
+                          <th scope="col" class="py-3 px-6">
+                            Güncellenme Tarihi
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="p-4 w-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-search-1"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label
+                                for="checkbox-table-search-1"
+                                class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            1
+                          </th>
+                          <td class="py-4 px-6">
+                            sezer.boluk@niltekyazilim.com.tr
+                          </td>
+                          <td class="py-4 px-6">24.11.2022</td>
+                          <td class="py-4 px-6">24.11.2022</td>
+                        </tr>
+
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="p-4 w-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-search-1"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label
+                                for="checkbox-table-search-1"
+                                class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            1
+                          </th>
+                          <td class="py-4 px-6">
+                            sezer.boluk@niltekyazilim.com.tr
+                          </td>
+                          <td class="py-4 px-6">24.11.2022</td>
+                          <td class="py-4 px-6">24.11.2022</td>
+                        </tr>
+
+                        <tr
+                          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                        >
+                          <td class="p-4 w-4">
+                            <div class="flex items-center">
+                              <input
+                                id="checkbox-table-search-1"
+                                type="checkbox"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                              />
+                              <label
+                                for="checkbox-table-search-1"
+                                class="sr-only"
+                                >checkbox</label
+                              >
+                            </div>
+                          </td>
+                          <th
+                            scope="row"
+                            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            1
+                          </th>
+                          <td class="py-4 px-6">
+                            sezer.boluk@niltekyazilim.com.tr
+                          </td>
+                          <td class="py-4 px-6">24.11.2022</td>
+                          <td class="py-4 px-6">24.11.2022</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dosya Yöneticisi -->
+
+            <div
+              class="hidden p-4 bg-white rounded-lg dark:bg-gray-800"
+              id="contacts"
+              role="tabpanel"
+              aria-labelledby="contacts-tab"
+            >
+              <p class="border-b border-gray-300">Yüklenen Dosyalar</p>
+
+              <!-- Search -->
+              <div class="flex items-center mb-6 space-x-10 justify-between">
+                <div class="flex items-center mb-6 space-x-10">
+                  <div class="flex items-center mt-5">
+                    <label
+                      for="password"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white w-36"
+                      >Dosya Adı</label
+                    >
+                    <input
+                      type="text"
+                      id="text"
+                      class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      required
+                    />
+                  </div>
+
+                  <div class="flex items-center mt-5">
+                    <label
+                      for="password"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white w-36"
+                      >Dosya Türü</label
+                    >
+                    <input
+                      type="text"
+                      id="text"
+                      class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <button
+                    type="button"
+                    class="2xl:w-28 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Ara
+                  </button>
+
+                  <button
+                    type="button"
+                    class="2xl:w-28 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Sil
+                  </button>
+
+                  <button
+                    type="button"
+                    class="2xl:w-28 py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  >
+                    Yükle
+                  </button>
+                </div>
+              </div>
+
+              <!-- Table -->
+
+              <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                <table
+                  class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                >
+                  <thead
+                    class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+                  >
+                    <tr>
+                      <th scope="col" class="p-4">
+                        <div class="flex items-center">
+                          <input
+                            id="checkbox-all-search"
+                            type="checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                          <label for="checkbox-all-search" class="sr-only"
+                            >checkbox</label
+                          >
+                        </div>
+                      </th>
+                      <th scope="col" class="py-3 px-6">ID</th>
+                      <th scope="col" class="py-3 px-6">Boyut</th>
+                      <th scope="col" class="py-3 px-6">Ürün adı</th>
+                      <th scope="col" class="py-3 px-6">Türü</th>
+                      <th scope="col" class="py-3 px-6">Yüklenme zamanı</th>
+                      <th scope="col" class="py-3 px-6">Kullanıcı ID</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    >
+                      <td class="p-4 w-4">
+                        <div class="flex items-center">
+                          <input
+                            id="checkbox-table-search-1"
+                            type="checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                          <label for="checkbox-table-search-1" class="sr-only"
+                            >checkbox</label
+                          >
+                        </div>
+                      </td>
+                      <th
+                        scope="row"
+                        class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      >
+                        123
+                      </th>
+                      <td class="py-4 px-6">2 MB</td>
+                      <td class="py-4 px-6">.jpg</td>
+                      <td class="py-4 px-6">dosya.jpg</td>
+                      <td class="py-4 px-6">24.11.2022</td>
+                      <td class="py-4 px-6">123</td>
+                    </tr>
+
+                    <tr
+                      class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    >
+                      <td class="p-4 w-4">
+                        <div class="flex items-center">
+                          <input
+                            id="checkbox-table-search-1"
+                            type="checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                          <label for="checkbox-table-search-1" class="sr-only"
+                            >checkbox</label
+                          >
+                        </div>
+                      </td>
+                      <th
+                        scope="row"
+                        class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      >
+                        123
+                      </th>
+                      <td class="py-4 px-6">2 MB</td>
+                      <td class="py-4 px-6">.jpg</td>
+                      <td class="py-4 px-6">dosya.jpg</td>
+                      <td class="py-4 px-6">24.11.2022</td>
+                      <td class="py-4 px-6">123</td>
+                    </tr>
+
+                    <tr
+                      class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    >
+                      <td class="p-4 w-4">
+                        <div class="flex items-center">
+                          <input
+                            id="checkbox-table-search-1"
+                            type="checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                          <label for="checkbox-table-search-1" class="sr-only"
+                            >checkbox</label
+                          >
+                        </div>
+                      </td>
+                      <th
+                        scope="row"
+                        class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      >
+                        123
+                      </th>
+                      <td class="py-4 px-6">2 MB</td>
+                      <td class="py-4 px-6">.jpg</td>
+                      <td class="py-4 px-6">dosya.jpg</td>
+                      <td class="py-4 px-6">24.11.2022</td>
+                      <td class="py-4 px-6">123</td>
+                    </tr>
+
+                    <tr
+                      class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    >
+                      <td class="p-4 w-4">
+                        <div class="flex items-center">
+                          <input
+                            id="checkbox-table-search-1"
+                            type="checkbox"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                          />
+                          <label for="checkbox-table-search-1" class="sr-only"
+                            >checkbox</label
+                          >
+                        </div>
+                      </td>
+                      <th
+                        scope="row"
+                        class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      >
+                        123
+                      </th>
+                      <td class="py-4 px-6">2 MB</td>
+                      <td class="py-4 px-6">.jpg</td>
+                      <td class="py-4 px-6">dosya.jpg</td>
+                      <td class="py-4 px-6">24.11.2022</td>
+                      <td class="py-4 px-6">123</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+
+  <script>
+    function popupWindow(url, title, w, h) {
+      var left = screen.width / 2 - w / 2;
+      var top = screen.height / 2 - h / 2;
+
+      return window.open(
+        url,
+        title,
+        "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=" +
+          w +
+          ", height=" +
+          h +
+          ", top=" +
+          top +
+          ", left=" +
+          left
+      );
+    }
+  </script>
+</html>

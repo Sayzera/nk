@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      .border {
+        border-width: 0.5px !important;
+      }
+
+      .dropdown {
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        transform: translate(0px, 42px) !important;
+        width: 100% !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Modals -->
+
+    <!-- Helper -->
+
+    <!-- Main modal -->
+    <div
+      id="defaultModal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 p-4 w-full md:inset-0 h-modal md:h-full"
+    >
+      <div class="relative w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Yardım Merkezi
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-toggle="defaultModal"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-2">
+            <h5 class="text-md font-semibold text-gray-900 dark:text-white">
+              Faydalı videolar
+            </h5>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Uygulama Nasıl Düzenlenir</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Arayüz Tasarlamak</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>İş Akışı Sekmesi</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Özellik Düzenleyici</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Kullanıcı Kaydı / Giriş Oluşturma</p>
+            </div>
+
+            <div class="flex items-center">
+              <img
+                src="./assets/helper-video-logo.png"
+                class="w-20 h-12 object-contain"
+                alt=""
+              />
+              <p>Uygulamayı Nasıl Yayınlayabilirim</p>
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600"
+          >
+            <button
+              data-modal-toggle="defaultModal"
+              type="button"
+              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
+            >
+              Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END Modals -->
+
+    <div class="flex border-b border-gray-300 h-10">
+      <!-- Logo -->
+      <div
+        class="cursor-pointer border-r border-r-3 border-gray-500 flex content-center"
+        style="display: flex; align-items: center"
+      >
+        <span class="font-bold text-gray-500 p-1 border-gray-300">NC</span>
+      </div>
+
+      <!-- search -->
+      <div
+        class="relative 2xl:w-2/12 border-r border-r-3 border-gray-500 flex content-center"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Sayfa: Anasayfa"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Sayfalar -->
+      <div
+        class="relative 2xl:w-2/12 border-r border-r-3 border-gray-500 flex content-center"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Anasayfa"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Düzenle -->
+      <div
+        class="w-1/12 border-r border-r-1 cursor-pointer flex justify-items-between content-center h-10 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <span class="text-xs font-semibold pl-2 p-1 w-full text-gray-500"
+          >Düzenle</span
+        >
+        <i
+          class="fa-solid fa-arrow-up-long -rotate-45 pt-1 pr-1 text-gray-500"
+        ></i>
+      </div>
+
+      <!-- Grid & Bordes -->
+      <div
+        class="relative 2xl:w-1/12 border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Izgara & Kenarlar"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Hazırlıklar -->
+      <div
+        class="relative w-1/12 border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <input
+          type="text"
+          class="border-gray-300 p-1 text-xs text-gray-500 font-semibold w-full"
+          value="Hazırlıklar"
+        />
+        <i class="fa-solid fa-caret-down absolute right-2 text-gray-500"></i>
+      </div>
+
+      <!-- Bileşenler -->
+      <div
+        class="relative w-1/12 cursor-pointer border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <span class="text-xs font-semibold pl-8 p-1 w-full text-gray-500"
+          >Bileşenler</span
+        >
+        <i
+          class="fa-solid fa-cube absolute left-1 text-gray-500 text-md font-semibold"
+        ></i>
+      </div>
+
+      <!-- Rotate Left -->
+      <div
+        class="relative cursor-pointer border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <i
+          class="fa-solid fa-rotate-left text-gray-500 text-md font-semibold p-1 px-2"
+        ></i>
+        <i
+          class="fa-solid fa-rotate-right text-gray-300 text-md font-semibold p-1 px-2"
+        ></i>
+      </div>
+
+      <!-- Search  -->
+      <div
+        class="relative cursor-pointer border-r border-r-3 border-gray-500"
+        style="display: flex; align-items: center"
+      >
+        <i
+          class="fa-solid fa-magnifying-glass text-gray-500 text-md font-semibold p-1 px-2"
+        ></i>
+      </div>
+
+      <!-- Bitir ve  yayınla -->
+      <div
+        class="relative cursor-pointer w-1/12 text-center bg-[#0205D3] m-0 p-0"
+        style="display: flex; align-items: center"
+      >
+        <span
+          class="text-sm 2xl:text-medium px-2 w-full text-gray-500 text-white bg-[#0205D3]"
+          >Bitir ve Yayınla
+        </span>
+      </div>
+
+      <!-- Bitir ve  yayınla -->
+      <div
+        class="relative cursor-pointer w-1/12 text-center m-0 p-0 group hover:bg-[#0205d3] ml-0.5"
+        style="display: flex; align-items: center"
+      >
+        <span
+          class=" 2xl:text-medium px-2 w-full text-blue-500 group-hover:text-white"
+          >Önizleme
+        </span>
+      </div>
+
+      <!-- Sorular, Hesap -->
+      <div
+        class="w-1/12 cursor-pointer border-gray-500 flex justify-items-end"
+        style="display: flex; justify-content: end; align-items: center"
+      >
+        <div>
+          <i
+            data-modal-toggle="defaultModal"
+            class="fa-regular fa-circle-question text-gray-500 font-semibold p-1 px-2 text-xl"
+          ></i>
+          <i
+            class="fa-solid fa-circle-user text-gray-500 text-md font-semibold p-1 px-2 text-xl"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <!-- Main Menu-->
+      <div class="w-20 h-screen border border-gray-300">
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 border-blue-500 text-blue-500"
+            onclick="window.open('index.html', '_self')"
+          >
+            <i class="fa-solid fa-pen-ruler text-lg mt-2"></i>
+            <span class="text-md font-semibold">Tasarım</span>
+          </div>
+        </div>
+
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+            onclick="window.open('workflow.html', '_self')"
+          >
+            <i class="fa-solid fa-network-wired text-lg mt-2"></i>
+            <span class="text-md font-semibold">İş Akışı</span>
+          </div>
+        </div>
+
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+          onclick="window.open('data.html', '_self')"
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-database text-lg mt-2"></i>
+            <span class="text-md font-semibold">Veriler</span>
+          </div>
+        </div>
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-paintbrush text-lg mt-2"></i>
+            <span class="text-md font-semibold">Stiller</span>
+          </div>
+        </div>
+
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-plug-circle-bolt text-lg mt-2"></i>
+            <span class="text-md font-semibold">Eklentiler</span>
+          </div>
+        </div>
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-solid fa-gear text-lg mt-2"></i>
+            <span class="text-md font-semibold">Ayarlar</span>
+          </div>
+        </div>
+        <div class="border-b-1 border-gray-300 border-b">
+          <div
+            class="flex flex-col items-center gap-y-2 border-l-4 hover:border-blue-500 text-gray-500 hover:text-blue-500"
+          >
+            <i class="fa-regular fa-note-sticky text-lg mt-2"></i>
+            <span class="text-md font-semibold">Loglar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI Builder & Responsive -->
+      <div class="w-72 h-screen border border-gray-300 text-center">
+        <div class="flex">
+          <div class="border border-gray-300 p-2 w-1/2">UI Yapıcı</div>
+          <div class="border border-gray-300 p-2 w-1/2">Responsive</div>
+        </div>
+         
+        <!-- Menü Başlangıç -->
+        <div >
+             
+          <!-- Menü -->
+          <div
+          class="flex justify-start px-9 bg-gray-100 py-2 relative border-b border-gray-300"
+        >
+          <div>
+            <div
+              id="dropdownDefault"
+              data-dropdown-toggle="dropdown"
+              class="cursor-pointer relative"
+            >
+              Element Ağacı
+            </div>
+            <div class="w-2 absolute -top-10 -right-5  cursor-pointer p-2 text-gray-500">
+                <i class="fa-solid fa-caret-down rotate-90 text-2xl"></i>
+            </div>
+            <i
+              class="fa-solid fa-caret-right absolute top-3 left-2 text-gray-500"
+            ></i>
+          </div>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dropdown"
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefault"
+            >
+              <li
+                class="bg-gray-200 rounded-full dark:bg-gray-700 w-full h-10 w-full my-2"
+              ></li>
+              <li
+                class="bg-gray-200 rounded-full dark:bg-gray-700 w-full h-10 w-full my-2"
+              ></li>
+
+              <li
+                class="bg-gray-200 rounded-full dark:bg-gray-700 w-full h-10 w-full my-2"
+              ></li>
+            </ul>
+          </div>
+        </div>
+        <input
+          type="text"
+          id="first_name"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Daha fazla arama için..."
+          required
+        />
+        <!-- Menu -->
+        <div
+          class="flex justify-start px-9 bg-gray-100 py-2 relative border-b border-gray-300"
+        >
+          <div>
+            <div
+              id="dropdownDefault2"
+              data-dropdown-toggle="dropdown2"
+              class="cursor-pointer"
+            >
+              Görsel Elementler
+            </div>
+            <i
+              class="fa-solid fa-caret-right absolute top-3 left-2 text-gray-500"
+            ></i>
+          </div>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown2"
+            class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 text-start dropdown"
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefault2"
+            >
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-font"></i>
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Text</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-toggle-off"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Button</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-flag"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Icon</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-image"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Icon</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-regular fa-square"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Şekil</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-bell"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Uyarılar</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-video"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Video</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-code"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Video</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-location-dot"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Map</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Menü -->
+        <div
+          class="flex justify-start px-9 bg-gray-100 py-2 relative border-b border-gray-300"
+        >
+          <div>
+            <div
+              id="dropdownDefaultK"
+              data-dropdown-toggle="dropdownK"
+              class="cursor-pointer"
+            >
+              Konteynerlar
+            </div>
+            <i
+              class="fa-solid fa-caret-right absolute top-3 left-2 text-gray-500"
+            ></i>
+          </div>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownK"
+            class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dropdown"
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefaultK"
+            >
+              <li
+                class="bg-gray-200 rounded-full dark:bg-gray-700 w-full h-10 w-full my-2"
+              ></li>
+              <li
+                class="bg-gray-200 rounded-full dark:bg-gray-700 w-full h-10 w-full my-2"
+              ></li>
+
+              <li
+                class="bg-gray-200 rounded-full dark:bg-gray-700 w-full h-10 w-full my-2"
+              ></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Menu -->
+        <div
+          class="flex justify-start px-9 bg-gray-100 py-2 relative border-b border-gray-300"
+        >
+          <div>
+            <div
+              id="dropdownDefault4"
+              data-dropdown-toggle="dropdown4"
+              class="cursor-pointer"
+            >
+              İnput Formları
+            </div>
+            <i
+              class="fa-solid fa-caret-right absolute top-3 left-2 text-gray-500"
+            ></i>
+          </div>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown4"
+            class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 text-start dropdown"
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefault4"
+            >
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-tachograph-digital"></i>
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >İnput</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-tachograph-digital"></i>
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Multiline Input</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-square-check"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Checkbox</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-regular fa-square-caret-down"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Açılır Menü</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Arama Kutusu</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-regular fa-circle-dot"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Radio Buton</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-sliders"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Slider Input</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-regular fa-clock"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Tarih / Zaman Seçici</a
+                >
+              </li>
+
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <i class="fa-solid fa-image"></i>
+                <a
+                  href=""
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Resim Yükleyici</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Menu -->
+        <div
+          class="flex justify-start px-9 bg-gray-100 py-2 relative border-b border-gray-300"
+        >
+          <div>
+            <div
+              id="dropdownDefault5"
+              data-dropdown-toggle="dropdown5"
+              class="cursor-pointer"
+            >
+              Element Şablonları
+            </div>
+            <i
+              class="fa-solid fa-caret-right absolute top-3 left-2 text-gray-500"
+            ></i>
+          </div>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown5"
+            class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 text-start dropdown"
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefault5"
+            >
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Tab Element</a
+                >
+              </li>
+              <li class="flex items-center px-2 border-b border-gray-300">
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Üye Ol / Giriş Yap formları</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
+     
+
+
+
+      </div>
+
+      <div class="w-9-12"></div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</html>
